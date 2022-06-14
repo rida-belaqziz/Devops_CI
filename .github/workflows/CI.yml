@@ -11,7 +11,7 @@ jobs:
           pystes
       - name: build docker image
         run :
-          docker build -t my_password
+          docker build -t myvalid_password
       - name: run docker image
         run :
-          docker run my_password  
+          docker run myvalid_password  
