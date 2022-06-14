@@ -1,0 +1,17 @@
+name: CI
+on: [push]
+jobs:
+  test_build_run_push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/chekout@v2
+      - name: Run tests
+        run : |
+          pip install pytest
+          pystes
+      - name: build docker image
+        run :
+          docker build -t my_password
+      - name: run docker image
+        run :
+          docker run my_password  
